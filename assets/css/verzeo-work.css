@@ -1,0 +1,413 @@
+*
+{
+    padding : 0;
+    margin :0;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100%;
+    
+}
+
+/*------------------- NAVBAR -------------------*/
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+
+.navbar{
+    padding: 0 !important;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar-nav li{
+    padding:0 10px ;
+}
+
+#age{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    /* transition: all 0.5s; */
+}
+
+#age:hover{
+    color: black;
+    background-color: white;
+}
+
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600 ;
+    float: right;
+    text-align: left;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+
+
+/* ------------------- courses ------------------- */
+
+#courses{
+    padding:0;
+    margin-top: 4%;
+    background: linear-gradient(to right,rgba(197, 188, 188, 0.1),rgba(226, 221, 221, 0.1),rgba(230, 222, 222, 0.1));
+    /* box-shadow: 0px -20px 10px 2px rgba(128, 128, 128, 0.1); */
+}
+
+.course-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 11%;
+}
+
+.course-left-col , .course-right-col{
+    flex-basis: 50%;
+    max-width: 48%;
+}
+
+.course-left-col img{
+    width: 122%;
+}
+
+.course-text{
+    max-width: 450px;
+}
+
+.course-text h4{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.image-upload{
+    width: 23rem;
+    height: 20rem;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 20px 10px #888888;
+}
+
+.buttons{
+    margin-top: 6%;
+    padding: 5px;
+    text-align: center;
+}
+
+.image-box{
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    border: 1px dotted rgba(128, 128, 128, 0.705);
+    border-radius: 10px;
+}
+
+
+
+/* ------------------- Example Section ------------------- */
+
+#example-section{
+    padding:0;
+    background-color: rgba(128, 128, 128, 0.1);
+    box-shadow: 0px -15px 10px 2px rgba(128, 128, 128, 0.1);
+    margin-bottom: -16px;
+}
+
+.example-row{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.example-row h4{
+    font-weight: 600;
+    font-size: 250%;
+}
+
+.box{
+    border: 1px solid black;
+    width: 80%;
+    height: 31rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.example-left-col, .example-right-col{
+    flex-basis: 50%;
+    max-width: 49.9%;
+}
+
+.example-left-col img{
+    width: 105%;
+    margin: 0;
+    height: 30.9rem;
+}
+
+.factor{
+    margin: 45px 5px;
+}
+.factor > input{
+background: transparent;
+border:none;
+outline: none;
+}
+
+
+/* ------------------- Footer -------------------  */
+
+#footer{
+    padding: 50px 0 30px;
+    margin-top: auto;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #f67c92;
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left-call{
+    flex-basis: 50%;
+    margin-top: 30px;
+}
+
+.footer-right-call{
+    flex-basis: 35%;
+    margin-top: 30px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4{
+    color:rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.link-title small{
+    font-size: 13px;
+    color:#777;
+}
+
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info img{
+width: 100px;
+}
+
+.footer-info button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.copyright-text, .footer-logo{
+    flex-basis: 40%;
+}
+
+
+
+
+
+
+@media only screen and (max-width:770px){
+
+    .course-row{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    .course-left-col {
+        flex-basis: 80%;
+    }
+    .course-right-col {
+        flex-basis: 100%;
+        margin-top: 50px;
+    }
+    .contact-left-col .line{
+        margin-left: 15px;
+    }
+
+
+    .footer-row{
+        margin-top: 2%;
+    }
+
+    .footer-left-call , .footer-right-call{
+        flex-basis: 100%;
+    }
+    .link-title{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+
+    .link-title h4{
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  /* Upload Section */
+
+
+#upload{
+    padding:0;
+    margin-top: 4%;
+    background-color: rgba(128, 128, 128, 0.1);
+    box-shadow: 0px -20px 10px 2px rgba(128, 128, 128, 0.1);
+    text-align: center;
+}
+
+ .upload-right-col{
+    flex-basis: 100%;
+}
+
+.upload-left-col img{
+    width: 122%;
+}
+
+.upload-text{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upload-text h4{
+    font-weight: 600;
+    font-size: 65px;
+}
+
+.image-upload{
+    width: 23rem;
+    height: 20rem;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 20px 10px #888888;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+.buttons{
+    margin-top: 6%;
+    padding: 5px;
+    text-align: center;
+}
+
+.image-box{
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    border: 1px dotted rgba(128, 128, 128, 0.705);
+    border-radius: 10px;
+}
+
+
+
+/* ------------------- For Small Screens -------------------  */
+
+@media only screen and (max-width:770px){
+
+    .upload-text h4{
+        font-size: 50px;
+    }
+
+    .upload-right-col {
+        margin-top: 50px;
+    }
+
+    .image-upload{
+        width: 18rem;
+        height: 17rem;
+    }
+}
+
+@media only screen and (max-width:585px){
+    
+    .upload-text h4{
+        font-size: 40px;
+    }
+
+    .image-upload{
+        width: 15rem;
+        height: 18rem;
+    }
+}
