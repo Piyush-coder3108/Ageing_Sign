@@ -53,6 +53,7 @@
    if(evt.dataTransfer.files[0].type=="image/jpeg" || evt.dataTransfer.files[0].type=="image/jpg" || evt.dataTransfer.files[0].type=="image/png"){
     document.getElementById("image").files=evt.dataTransfer.files;
     document.getElementById("drop-image").innerText=document.getElementById("image").files[0].name;
+    document.getElementById("image_form").submit();
    }
    else{
      alert("Please provide either jpg, jpeg or png image");
